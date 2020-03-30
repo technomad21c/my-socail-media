@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title> Homo Sharepiens </title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="title">
+        <h1> Share Anything, Sharepiens! </h1>
+    </div>
+    <p class="error"> wrong id & password! </p>
+
+    <div id="search">
+        <form method="post">
+            <input type="text" name="keyword" placeholder="input searching keywords" required="required" />
+            <button type="submit" value="search"> Search </button> 
+        </form>
+    </div>
+    
+    <div id='logout'>
+        <a href="logout.php"> logout </a>
+    </div>
+    <div class="newpost">
+        <div>
+            <div class="profile">
+                <img src="images/profile/pi00.png" class="pImg">    
+                <span class="postname"> Brandon </span>
+                <span class="posttime"> 14:22, 2018-01-02 </span>
+            </div>
+            <div class="content">                
+                    <textarea rows="10" cols="30" name="content" form="newpostform" id="posttext">enter new post here... </textarea>                
+            </div>
+            <div class="insert">
+                <form action="newPost.php" id="newpostform">
+                    <button type="submit" value="insert"> Posting </button>                
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="timeline">
+        <div class="post">
+            <div class="profile">
+                <img src="images/profile/pi00.png" class="pImg">
+                <span class="postname"> Brandon </span>
+                <span class="posttime"> 14:22, 2018-01-02 </span>
+            </div>
+            <div class="content">
+                <div class="text">
+                    Today's food! <br>
+                    Very sweet! <br>                    
+                </div>               
+            </div>
+            <div class="delup">
+                <button type="submit" value="delete"> Delete </button>
+                <button type="submit" value="modify"> Modify </button>
+            </div>
+        </div>
+        
+        <div class="post">
+            <div class="profile">
+                <img src="images/profile/pi03.png" class="pImg">
+                <span class="postname"> Brandon </span>
+                <span class="posttime"> 14:22, 2018-01-02 </span>
+            </div>
+            <div class="content">
+                <div class="text">
+                    Today's food! <br>
+                    Very sweet! <br>                    
+                </div>               
+            </div>
+            <div class="delup">
+                <button type="submit" value="delete"> Delete </button>
+                <button type="submit" value="modify"> Modify </button>
+            </div>
+        </div>
+        
+        <div class="post">
+            <div class="profile">
+                <img src="images/profile/pi03.png" class="pImg">
+                <span class="postname"> Brandon </span>
+                <span class="posttime"> 14:22, 2018-01-02 </span>
+            </div>
+            <div class="content">
+                <div class="text">
+                    Today's food! <br>
+                    Very sweet! <br>                    
+                </div>               
+            </div>
+            <div class="delup">
+                <button type="submit" value="delete"> Delete </button>
+                <button type="submit" value="modify"> Modify </button>
+            </div>
+        </div>                
+    </div>
+    <div id="more">
+        <form>
+            <button type="submit" value="next"> read more </button>            
+        </form>
+    </div>
+ 
+ 
+
+</body>
+
+</html>
+
